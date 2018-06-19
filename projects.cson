@@ -1,0 +1,54 @@
+[
+  {
+    title: "hound"
+    group: "hny"
+    paths: [
+      "/Users/daiyi/go/src/github.com/honeycombio/hound"
+    ]
+  }
+  {
+    title: "txt"
+    paths: [
+      "/Users/daiyi/Dropbox/txt"
+      "/Users/daiyi/Dropbox/documents/atom"
+    ]
+  }
+  {
+    title: "www"
+    group: "hny"
+    paths: [
+      "/Users/daiyi/hny/www"
+    ]
+  }
+  {
+    title: "daiyi.co"
+    paths: [
+      "/Users/daiyi/nets/daiyi.github.io"
+    ]
+  }
+  {
+    title: "blog"
+    paths: [
+      "/Users/daiyi/nets/blog"
+    ]
+  }
+  {
+    title: "Sketchnote Club"
+    paths: [
+      "/Users/daiyi/nets/sketchnoteclub.github.io"
+    ]
+  }
+  {
+    title: "distractability www"
+    paths: [
+      "/Users/daiyi/nets/distractability.github.io"
+    ]
+  }
+  {
+    title: "Poodle"
+    group: "hny"
+    paths: [
+      "/Users/daiyi/hny/hound/cmd/poodle"
+    ]
+  }
+]

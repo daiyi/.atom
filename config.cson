@@ -1,0 +1,206 @@
+"*":
+  "apex-adapt-dark-slim-ui": {}
+  "atom-beautify":
+    general:
+      beautifyEntireFileOnSave: false
+  "atom-html-preview":
+    scrollToCursor: true
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+    moveToCancel: true
+  "city-lights-ui": {}
+  core:
+    audioBeep: false
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
+    customFileTypes:
+      "text.md": [
+        "txt"
+      ]
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "background-tips"
+      "teletype"
+      "wrap-guide"
+      "welcome"
+      "parinfer"
+      "autosave"
+      "atom-beautify"
+      "language-gfm"
+      "language-javascript"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+    ]
+    packagesWithKeymapsDisabled: [
+      "symbol-gen"
+    ]
+    projectHome: "/Users/daiyi/nets"
+    telemetryConsent: "no"
+    themes: [
+      "apex-adapt-dark-slim-ui"
+      "atom-dark-fusion-syntax"
+    ]
+    titleBar: "hidden"
+    useTreeSitterParsers: true
+  "double-tag":
+    allowEndTagSync: true
+    enabledScopes: [
+      "text.html"
+      "text.html.basic"
+      "text.xml"
+      "text.marko"
+      "source.js.jsx"
+      "source.tsx"
+      "text.html.erb"
+      "text.html.php"
+      "text.html.php.blade"
+    ]
+  "duotone-dark-syntax":
+    color:
+      duo: "#00f3ea"
+      uno: "#b1aacd"
+  editor:
+    fontFamily: "fira code"
+    fontSize: 11
+    invisibles: {}
+    softWrap: true
+  "exception-reporting":
+    userId: "f65ec386-f94d-4130-b6e2-0cc58bde23c2"
+  "expand-region": {}
+  "file-icons":
+    coloured: false
+    onChanges: true
+  "find-and-replace":
+    autocompleteSearches: true
+  "git-diff": {}
+  "glacier-dark-ui":
+    layoutMode: "Compact"
+  "go-plus":
+    autocomplete: {}
+    panel:
+      currentHeight: "18.62673484295106vh"
+    test:
+      runTestsOnSave: false
+  "gruvbox-plus-syntax":
+    contrast: "Hard"
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+  "js-hyperclick":
+    extensions: [
+      ".jsx"
+      ".js"
+      ".json"
+    ]
+  "language-babel":
+    autoIndentJSX: true
+  "linter-ui-default":
+    panelHeight: 270
+  parinfer: {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      excludedGlobs: [
+        "*.txt"
+      ]
+    prettierOptions: {}
+    useEslint: true
+  react:
+    enabledForAllJavascriptFiles: true
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.css.scss"
+      "source.js.jsx"
+      "meta"
+    ]
+  tabs:
+    displayMruTabList: false
+    enableMruTabSwitching: false
+  welcome:
+    showOnStartup: false
+".attribute-values.js.jsx.source":
+  editor:
+    tabLength: 4
+".js.jsx.react.source":
+  editor:
+    tabLength: 4
+".js.jsx.source":
+  editor:
+    showIndentGuide: false
+    tabLength: 4
+  "expand-region":
+    commands: [
+      {
+        command: "editor:select-word"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-word-include-dash"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-word-include-dash-and-dot"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-inside-tags"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-inside-single-quotes"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-around-single-quotes"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-inside-double-quotes"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-around-double-quotes"
+        recursive: false
+      }
+      {
+        command: "expand-region:select-inside-parentheses"
+        recursive: true
+      }
+      {
+        command: "expand-region:select-around-parentheses"
+        recursive: true
+      }
+      {
+        command: "expand-region:select-inside-curly-brackets"
+        recursive: true
+      }
+      {
+        command: "expand-region:select-around-curly-brackets"
+        recursive: true
+      }
+      {
+        command: "expand-region:select-inside-square-brackets"
+        recursive: true
+      }
+      {
+        command: "expand-region:select-around-square-brackets"
+        recursive: true
+      }
+      {
+        command: "emmet:balance-outward"
+        recursive: true
+      }
+    ]

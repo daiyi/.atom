@@ -1,0 +1,264 @@
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+
+  // .gutter {
+  //   .line-numbers {
+  //     border-right: 1px solid #2f2f2f;
+  //   }
+  // }
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  // border-color: red;
+}
+
+.indent-guide-improved {
+  background-color: rgba(203, 203, 235, 0.06);
+  &.indent-guide-stack {
+    background-color: rgba(203, 203, 235, 0.06);
+    &.indent-guide-active {
+      background-color: rgba(157, 157, 157, 0.25);
+    }
+  }
+}
+
+atom-text-editor {
+  // background-color: transparent;
+  // background-color: rgba(57, 53, 59, 0.07);
+  // .gutter {
+  //   background-color: transparent;
+  // }
+}
+
+.tab::after {
+  border: none;
+}
+
+.tab-bar .tab::before {
+  background: none;
+}
+.tab-bar .tab::after {
+  background-image: none;
+}
+.tab-bar .tab {
+  .title {
+    background-color: none;
+  }
+  color: rgb(115, 115, 115);
+  -webkit-mask: none;
+}
+.tab-bar {
+  // background: rgba(27, 25, 29, 0.67);
+
+  .tab {
+    &.modified {
+      .title {
+        color: inherit;
+      }
+      .close-icon {
+        &:before {
+          color: #7b74c9;
+        }
+      }
+    }
+  }
+}
+.tab-bar .tab.active[data-type$="Editor"] {
+  .title {
+    background-color: transparent;
+  }
+  &::after {
+    border: 0;
+  }
+  // background-color: rgba(51, 51, 51, 0.29);
+}
+atom-pane-container atom-pane {
+  padding-top: 0;
+}
+
+@white: #d0d0d0;
+@text: @white;
+@gray: #999;
+@light-gray: #555;
+
+// markdown, gotta install the language-markdown package and override gfm
+.syntax--md {
+  font-family: "fira code";
+  font-weight: 200;
+  color: @text;
+
+  .indent-guide {
+    color: #333;
+  }
+
+  .syntax--fenced {
+    &.syntax--code {
+      margin-right: 30px;
+      display: block;
+
+      .syntax--embedded {
+        background: rgba(158, 149, 167, 0.15);
+        display: block;
+      }
+    }
+  }
+
+  .syntax--markup {
+    -webkit-font-smoothing: auto;
+
+    &.syntax--bold {
+      // color: #9b9aee;
+      color: #c0c2d5;
+      font-weight: bold;
+    }
+
+    // &.syntax--changed {
+    //   color: @purple;
+    // }
+    //
+    // &.syntax--deleted {
+    //   color: @red;
+    // }
+    //
+    &.syntax--italic {
+      color: #e3def0;
+      font-style: italic;
+    }
+
+    &.syntax--heading {
+      color: #ddd;
+      // color: #4bbd85;
+      font-weight: bold;
+      // font-size: 22px;
+      // line-height: 22px;
+
+      // md only!
+      .syntax--heading-1 {
+        color: #ddd;
+        font-size: 28px;
+        line-height: 28px;
+        display: block;
+        margin-bottom: -14px;
+      }
+      .syntax--heading-2 {
+        color: #ddd;
+        font-size: 24px;
+        line-height: 24px;
+        display: block;
+        margin-bottom: -10px;
+      }
+      .syntax--heading-3 {
+        color: #ddd;
+        font-size: 19px;
+        line-height: 19px;
+        display: block;
+        margin-bottom: -5px;
+      }
+      .syntax--heading-4 {
+        color: #ddd;
+        font-size: 17px;
+        line-height: 17px;
+        display: block;
+        margin-bottom: -3px;
+      }
+      .syntax--heading-5 {
+        color: #ddd;
+        font-size: 16px;
+        line-height: 16px;
+        display: block;
+        margin-bottom: -2px;
+      }
+      .syntax--heading-6 {
+        color: #ddd;
+        font-size: 16px;
+        line-height: 16px;
+        display: block;
+        margin-bottom: -2px; // shitty hack because this language renders lines with position absolute.
+      }
+
+      // // the # in front of headers.
+      // .syntax--marker,         // gfm
+      .syntax--punctuation {
+        color: #666;
+        font-size: 0.7em;
+        font-weight: normal;
+      }
+    }
+
+    &.syntax--link {
+      // color: #9b9aee;
+      color: #bbb;
+      // text-decoration: underline;
+    }
+
+    &.syntax--strike {
+      text-decoration: line-through;
+      // text-decoration-color: #555;
+    }
+  }
+  // e.g. dash tickmarks in lists
+  // .syntax--variable .syntax--unordered .syntax--list .syntax--gfm
+  .syntax--list {
+    margin-left: 4px;
+    text-indent: -4px;
+    color: @text;
+
+    .syntax--punctuation {
+      color: #999;
+    }
+  }
+
+  .syntax--link {
+    // the text of the link e.g. [this thing](url)
+    &.syntax--string {
+      border-bottom: 1px dashed #666;
+      color: #a2c7ff;
+    }
+    &.syntax--uri {
+      color: #999;
+    }
+    .syntax--punctuation {
+      color: #888;
+    }
+
+    // gfm only
+    // the text of the link e.g. [this thing](url)
+    // .syntax--entity {
+    //   // color: #eee;
+    //   color: #17ffea;
+    // }
+  }
+
+  // &.syntax--inserted {
+  //   color: @green;
+  // }
+  //
+  // &.syntax--quote {
+  //   color: @orange;
+  // }
+  // syntax--markup syntax--code syntax--asciidoc syntax--gfm
+
+  // &.syntax--raw, &.syntax--code, .syntax--html {
+  //   background: #2d2c2f;
+  //   // background: #262528;
+  //   color: #a6b4ff;
+  //   .indent-guide {
+  //     background: #1d1f21;
+  //   }
+  // }
+
+  .syntax--hr {
+    color: transparent;
+    border-top: 1px dashed @light-gray;
+    display: block;
+    width: 100%;
+  }
+}

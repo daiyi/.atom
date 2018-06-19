@@ -1,0 +1,28 @@
+# EMACS CLASH MANUAL RESOLVE
+
+'atom-workspace atom-text-editor':
+  'ctrl-m': 'bracket-matcher:go-to-matching-bracket'
+
+# so apparently different expand/contract plugins work better for different grammars SIGH
+# 'atom-text-editor[data-grammar~="css"]':
+'atom-text-editor':
+  'alt-up': 'expand-region:expand'
+  'alt-down': 'expand-region:shrink'
+  'cmd-backspace': 'editor:delete-to-beginning-of-word'
+  'ctrl-right': 'editor:move-to-end-of-word'
+  'ctrl-left': 'editor:move-to-beginning-of-word'
+
+  'shift-ctrl-down': 'symbols-view:go-to-declaration'
+  'shift-ctrl-up': 'symbols-view:return-from-declaration'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'shift-cmd-up': 'editor:move-line-up'
+  'shift-cmd-down': 'editor:move-line-down'
+  'ctrl-cmd-c': 'editor:copy-project-path'
+
+'atom-workspace':
+  'cmd-k g': 'golang:toggle-panel'
+  'alt-cmd-g': 'symbol-gen:generate'
+
+'atom-text-editor[data-grammar~="go"]:not([mini])':
+  'cmd-k u': 'golang:find-usage'
